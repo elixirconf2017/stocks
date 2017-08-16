@@ -14,3 +14,8 @@ use Mix.Config
 # Example per-environment config:
 #
 #     import_config("#{Mix.env}.exs")
+
+if Mix.env == :dev do
+  config :mix_test_watch,
+    clear: true
+end

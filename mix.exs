@@ -5,13 +5,14 @@ defmodule Stocks.Mixfile do
   @version "0.1.0"
 
   @deps [
-    # { :earmark, ">0.1.5" },                      
+    {:mix_test_watch, github: "aforward/mix-test.watch", only: :dev, runtime: false},
+    # { :earmark, ">0.1.5" },
     # { :ex_doc,  "1.2.3", only: [ :dev, :test ] }
     # { :my_app:  path: "../my_app" },
   ]
-  
+
   # ------------------------------------------------------------
-  
+
   def project do
     in_production = Mix.env == :prod
     [
@@ -25,9 +26,9 @@ defmodule Stocks.Mixfile do
 
   def application do
     [
-      extra_applications: [         # built-in apps that need starting    
+      extra_applications: [         # built-in apps that need starting
         :logger
-      ], 
+      ],
     ]
   end
 
