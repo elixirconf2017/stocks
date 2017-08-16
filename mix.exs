@@ -6,6 +6,7 @@ defmodule Stocks.Mixfile do
 
   @deps [
     {:mix_test_watch, github: "aforward/mix-test.watch", only: :dev, runtime: false},
+    {:version_tasks, "~> 0.10"}
     # { :earmark, ">0.1.5" },
     # { :ex_doc,  "1.2.3", only: [ :dev, :test ] }
     # { :my_app:  path: "../my_app" },

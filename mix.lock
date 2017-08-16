@@ -1,2 +1,4 @@
 %{"fs": {:hex, :fs, "2.12.0", "ad631efacc9a5683c8eaa1b274e24fa64a1b8eb30747e9595b93bec7e492e25e", [], [], "hexpm"},
-  "mix_test_watch": {:git, "https://github.com/aforward/mix-test.watch.git", "6fdbcf06bb164885a2533ea2f3206a4981dbfd47", []}}
+  "git_cli": {:hex, :git_cli, "0.2.4", "43f58045f5d168fa2cff8d2e3822b8c43f294b4b832a419ed8cc01337f1c5b3d", [], [], "hexpm"},
+  "mix_test_watch": {:git, "https://github.com/aforward/mix-test.watch.git", "6fdbcf06bb164885a2533ea2f3206a4981dbfd47", []},
+  "version_tasks": {:hex, :version_tasks, "0.10.8", "32dfdcd5d36b844ff72a95ce1763b48aee29fe01c07794328ce0b0d611d58292", [], [{:git_cli, "~> 0.2", [hex: :git_cli, repo: "hexpm", optional: false]}], "hexpm"}}
