@@ -2,7 +2,7 @@ defmodule Stocks.Mixfile do
   use Mix.Project
 
   @name    :stocks
-  @version "0.1.2"
+  @version "0.1.3"
 
   @deps [
     {:mix_test_watch, github: "aforward/mix-test.watch", only: :dev, runtime: false},
