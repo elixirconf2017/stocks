@@ -1,5 +1,5 @@
 defmodule Stocks do
   def yield(stock_price, payout, :quarterly) do
-    payout / stock_price
+    payout * 4 / stock_price
   end
 end
