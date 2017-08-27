@@ -1,0 +1,12 @@
+#!/bin/bash
+
+MESSAGE=$(git log --format=%B -n 1 HEAD)
+
+VERSION=$(echo $MESSAGE | grep "v[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}")
+
+if [ "$VERSION" != "" ]; then
+  echo "DEPLOY IT"
+else
+  echo "Continue making the app awesome."
+fi
+
