@@ -3,9 +3,27 @@
 MESSAGE=$(git log --format=%B -n 1 HEAD)
 
 VERSION=$(echo $MESSAGE | grep "v[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}")
+VERSION_NAME=$(mix version.name)
 
 if [ "$VERSION" != "" ]; then
-  echo "DEPLOY IT"
+  case "$VERSION_NAME" in
+
+  "major")
+    echo "Major release"
+
+    ;;
+
+  "minor")
+    echo "Minor release"
+
+    ;;
+
+  "patch")
+    echo "Patch release"
+
+    ;;
+
+  esac
 else
   echo "Continue making the app awesome."
 fi
