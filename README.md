@@ -7,7 +7,7 @@
 
 ```elixir
 @deps [
-  stocks: "~> 0.1.4"
+  stocks: "~> 0.1.5"
 ]
 ```
 
