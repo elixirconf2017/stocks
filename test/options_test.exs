@@ -5,6 +5,7 @@ defmodule OptionsTest do
   test "split" do
     assert -0.1 == Options.split(10.05, 9.95)
     assert 1 == Options.split(9.05, 10.05)
+    assert 0 == Options.split(10, 10)
   end
 
 end
