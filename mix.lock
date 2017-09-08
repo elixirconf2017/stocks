@@ -1,4 +1,5 @@
-%{"fs": {:hex, :fs, "2.12.0", "ad631efacc9a5683c8eaa1b274e24fa64a1b8eb30747e9595b93bec7e492e25e", [:rebar3], [], "hexpm"},
+%{"fn_expr": {:hex, :fn_expr, "0.2.1", "9fea98b5eb43a15ce5f70d82504fc1b5b01be5c99bb0357574a267b47387817f", [], [{:version_tasks, "~> 0.10", [hex: :version_tasks, repo: "hexpm", optional: false]}], "hexpm"},
+  "fs": {:hex, :fs, "2.12.0", "ad631efacc9a5683c8eaa1b274e24fa64a1b8eb30747e9595b93bec7e492e25e", [:rebar3], [], "hexpm"},
   "git_cli": {:hex, :git_cli, "0.2.4", "43f58045f5d168fa2cff8d2e3822b8c43f294b4b832a419ed8cc01337f1c5b3d", [:mix], [], "hexpm"},
   "mix_test_watch": {:git, "https://github.com/aforward/mix-test.watch.git", "6fdbcf06bb164885a2533ea2f3206a4981dbfd47", []},
   "version_tasks": {:hex, :version_tasks, "0.10.17", "2a4ebb2afe7d940a7a1ab564663f31dda0f35f24fd150f8bec3b262c8b7b7066", [:mix], [{:git_cli, "~> 0.2", [hex: :git_cli, repo: "hexpm", optional: false]}], "hexpm"}}
