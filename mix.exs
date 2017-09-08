@@ -2,7 +2,7 @@ defmodule Stocks.Mixfile do
   use Mix.Project
 
   @name    :stocks
-  @version "0.1.5"
+  @version "0.1.1"
 
   @deps [
     {:mix_test_watch, github: "aforward/mix-test.watch", only: :dev, runtime: false},
@@ -11,6 +11,11 @@ defmodule Stocks.Mixfile do
     # { :ex_doc,  "1.2.3", only: [ :dev, :test ] }
     # { :my_app:  path: "../my_app" },
   ]
+
+  @aliases [
+    "test": ["test --stale"],
+  ]
+
 
   # ------------------------------------------------------------
 
@@ -21,6 +26,7 @@ defmodule Stocks.Mixfile do
       version: @version,
       elixir:  ">= 1.5.1",
       deps:    @deps,
+      aliases: @aliases,
       build_embedded:  in_production,
     ]
   end
